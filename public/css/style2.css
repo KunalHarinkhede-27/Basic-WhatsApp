@@ -1,0 +1,17 @@
+#div1{
+    height: 400px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 10px;
+}
+textarea{
+    width: 100%;
+}
+h2{
+    text-align: center;
+}

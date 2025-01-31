@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i.ibb.co/0tZx2jB/wanderlust.png">
+    <title>mini whatsapp</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h2>WhatsApp Chats!</h2>
+    <button><a href="http://localhost:8080/chats/create">create chat</a></button><br>
+    <button><a href="http://localhost:8080/chats/create1/new">create1</a></button><br>
+    <% for(let chat of chats){ %>
+        <div id="chat">
+        <p>From:<b><i><%= chat.from %></i></b></p>
+        <div id="inner"><p><%= chat.msg %></p>
+            <button><a href="http://localhost:8080/chats/<%= chat._id %>/update">Edit</a></button>
+        </div>
+        <p>Received by <b><i><%= chat.to %></i></b></p>
+        <form method="post" action="http://localhost:8080/chats/<%= chat._id %>?_method=DELETE">
+            <button style="cursor: pointer;" type="submit">delete</button>
+            <hr>
+            <p><%=chat.created_at.toString().split(" ")[4]%></p>
+            <p><%=chat.created_at.toString().split(" ").slice(0,4).join("-")%></p>
+        </form>
+        <form method="get" action="http://localhost:8080/chats/<%= chat._id %>">
+            <button>show</button>
+        </form>
+        </div>
+        <br>
+        <br>
+        <% } %>
+</body>
+</html>

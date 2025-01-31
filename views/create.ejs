@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>create chats</title>
+    <link rel="stylesheet" href="/style1.css">
+</head>
+<body>
+    <h2>Create new chat</h2>
+    <form method="post" action="http://localhost:8080/chats" title="create chat">
+        <label for="in1">From:</label>
+        <input type="text" placeholder="from" id="in1" name="from">
+        <label for="in2">Message:</label>
+        <textarea type="text" placeholder="enter your message" id="in2" name="msg" rows="5" cols="5"></textarea>
+        <label for="in3">to</label>
+        <input type="text" placeholder="to" id="in3" name="to">
+        <button type="submit">create</button>
+    </form>
+</body>
+</html>

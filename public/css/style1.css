@@ -1,0 +1,26 @@
+form{
+    margin: auto;
+    display: block;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 250px;
+    border-radius: 5px;
+    padding: 10px;
+}
+h2{
+    text-align: center;
+}
+input{
+    margin-bottom: 15px;
+}
+textarea{
+    margin-bottom: 15px;
+}
+button{
+    width: 60px;
+    height: 30px;
+    margin: auto;
+}
+

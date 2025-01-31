@@ -1,0 +1,16 @@
+#chat{
+    background-color: rgb(184, 212, 236);
+    border-radius: 10px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+}
+#inner{
+    border-radius: 10px;
+    background-color: rgb(40, 105, 218);
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
